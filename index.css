@@ -17,10 +17,21 @@
     padding: 0;
 }
 
+
 body {
     background-image: linear-gradient(to bottom, black, white);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.flexItem{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vh;
+}
+
+.flexItem1{
+    display: inline-flex;
 }
 
 .item{
@@ -28,21 +39,16 @@ body {
     font-size: 2vh;
     font-weight: lighter;
     color: rgb(143, 201, 245);
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
-#grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 68vw;
-    text-align: center;
-    padding-top: 3vh;
-}
-#gridspace{
-    display: grid;
-    grid-template-columns: auto auto auto;
+.small-nav {
+    display: none;
 }
 
 .logo {
+    font-weight: lighter;
     font-size: 16vh;
     color: rgb(143, 201, 245);
     font-family: 'Monoton', cursive;
@@ -53,159 +59,48 @@ body {
     width: 33vw;
     height: 56vh;
     padding: 1vw;
-    position: relative;  
-    left: 14vw; 
 }
+
 .image2{
     width: 33vw;
     height: 56vh;
     padding: 1vw; 
-    position: relative;  
-    right: -13vw; 
 }
 
+.flexItem2{
+    display: flex;
+    padding-left: 14vw; 
+    display: 90%; 
+}
+
+.Let-Bake-Container{
+    width: 50%; 
+    padding-left: 21vw; 
+}
 
 .high{
     font-size: 12vh;   
     text-align: center; 
     font-weight: bolder;
+    background-color: rgb(165, 45, 45); 
+    color: white;
     
 }
 
-.row{
-    grid-row: 1/4;
-}
-#grid1{
-    display: grid;
-    grid-template-columns: auto auto; 
-    grid-column-gap: 19vw;  
-    row-gap: 0.5vh; 
+.flexItem3{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
 }
 
-.text-block {
-    width: 25vw;
-    height: 40vh;
-    background-color: white;
-    color: black;
-    text-align: center;
-    margin-top: 4vh;
-}
-
-#gridrow{
-    display: grid;
-    grid-template-rows: repeat();
-    grid-row-gap: 3vh;
-
-}
-
-.box{
-    width: 100%;
-    height: 18vh;
-    background-color: black;
-    color: antiquewhite;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 4vh;
-    text-align: justify;
-}
-#pa{
-    white-space: pre;
-}
-#gridImg{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    padding-left: 2vw;  
-}
-
-#po{
-    position: relative;
-    top: 2vh;
-}
-.image3{
-    width: 14vw;
-    height: 26vh; 
-    animation-name: text;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-}
-.text{
-    color: black;
-    font-size: 2vh;
-    font-family: 'Lilita One'; 
-    text-align: center;
-}
-
-input,
-input::placeholder {
-    font-size: 2vh;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.button{
-    background-color: rgb(68, 3, 25);
-    color: bisque; 
-    font-size: 2vh; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border: none;
-}
-  
-
-.image4{
-    width: 100%;
-    height: 50vh;
-}
-.image5{
-    width: 4.5vw;
-    height: 9vh;
-    border-radius: 5vh;
-    position: relative;
-    top: -3vh;
-}
-.boxText{
-    font-family: 'Black Ops One', cursive;
-    font-size: 4vh;
-    text-align: center;
-
-} 
-
-.boxText1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.cursive2{
+    font-family: 'Sigmar', cursive;
     font-size: 6vh;
-    text-align: center;
-    font-weight: bolder;   
-}
-
-.para{
-    font-family: 'Rancho', cursive;
-    font-size: 2vh;
     text-align: justify;
-    padding: 2vh;
-}
-.text-gif {
-    width: 25vw;
-    height: 40vh;
-    background-color: white;
-    color: black;
-    text-align: justify;
-    background-image: url(iloveimg/decor.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.buttonBox{
-    background-color: rgb(68, 3, 25);
-    color: bisque; 
-    font-size: 2vh; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border: none;
-    padding: 0.1vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-
-}
-
-#gridText{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    
+    font-weight: bolder;
+    color: rgb(243 177 52);
+    letter-spacing: 0.2vw;
+    padding-left: 3vw;
 }
 
 .cursive{
@@ -220,7 +115,63 @@ input::placeholder {
     position: relative;
     left: 6vw;
     letter-spacing: 0.2vw;
+    line-height: 8vh;
 }
+
+.text-block {
+    width: 25vw;
+    height: 40vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.image5{
+    width: 4.5vw;
+    height: 9vh;
+    border-radius: 5vh;
+    position: relative;
+    top: -3vh;
+}
+
+.boxText{
+    font-family: 'Black Ops One', cursive;
+    font-size: 4vh;
+    text-align: center;
+
+} 
+
+.para{
+    font-family: 'Rancho', cursive;
+    font-size: 2vh;
+    text-align: justify;
+    padding: 2vh;
+}
+
+.buttonBox{
+    background-color: rgb(68, 3, 25);
+    color: bisque; 
+    font-size: 2vh; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    padding: 0.1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+}
+
+.text-gif {
+    width: 25vw;
+    height: 40vh;
+    background-color: white;
+    color: black;
+    text-align: justify;
+    background-image: url(iloveimg/decor.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .text1{
     color: rgb(238, 167, 167);
     font-size: 2.5vh;
@@ -228,63 +179,66 @@ input::placeholder {
     font-weight: bolder;
     text-align: center;
     letter-spacing: 0.1vw;
-}
-
-.image6{
-    width: 1vw;
-    height: 12vh;
-    text-align: center;
-}
-.cursive2{
-    font-family: 'Sigmar', cursive;
-    font-size: 6vh;
-    text-align: justify;
-    font-weight: bolder;
-    padding-top: 8vh; 
-    position: relative;
-    left: 6vw;
-    color: rgb(243 177 52);
-    letter-spacing: 0.2vw;
+    padding: 2vh;
 }
 
 .highli{ 
+    background-color: black;
+    width: 100%;
     text-align: center; 
     font-weight: bolder;
+    font-size: 3vh;
     color: rgb(253, 250, 251);
-    text-shadow: 0px 0px 5px #896868;
-    transform: perspective(1000px) rotateY(25deg);
-    padding: 3vh;   
+    padding-top: 2vh;  
 }
 
-.bottom{
+.box{
     width: 100%;
-    height: 23vh;      
+    height: 32vh;
+    background-color: black;
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vh;
+    text-align: justify;
 }
+
+.flexItem4{
+    display: flex; 
+    justify-content: space-between;
+    padding: 1vw;      
+}
+
+.image3{
+    width: 14vw;
+    height: 26vh; 
+}
+
+.text{
+    color: rgb(255, 251, 251);
+    font-size: 2vh;
+    font-family: 'Lilita One'; 
+    text-align: center;
+    font-weight: lighter;
+}
+
 .bottomBox{
     width: 100%;
-    height: 100%vh;
+    height: 100%;
     background-color: bisque;
     background-image: url(iloveimg/lemon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: beige;
 }
-#colGrid{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 50vw;
-    text-align: center;
-}
-#bottomGrid{
-    display: grid;
-    grid-template-rows: auto auto auto; 
-    text-align: left;
-    grid-row-gap: 26vh;
-    padding-left: 4vw;
 
+.op{
+    background-color: black;
+    opacity: 0.6;
+    padding: 3vh;
 }
 
 .sign1{
+    width: 40%;
     font-family: 'Vina Sans', cursive;
     font-size: 5vh;
     color: rgb(247, 247, 217);
@@ -297,12 +251,19 @@ input::placeholder {
     color: yellow;
     text-align: left;
     position: relative;
+    width: 30%;
 }
-.op{
-    background-color: black;
-    opacity: 0.6;
-    padding: 3vh;
+
+.button{
+    background-color: rgb(136, 218, 153);
+    color: rgb(10, 8, 6); 
+    font-size: 3vh; 
+    font-family: 'Vina Sans', cursive;
+    border: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
+
 
 .whiteBox{
     width: 100%;
@@ -310,25 +271,26 @@ input::placeholder {
     background-color: rgb(253, 226, 234);
 }
 
-#bottomGrid1{
-    display: grid;
-    grid-template-rows: auto auto auto; 
-    text-align: center;
-    grid-row-gap: 5vh;
-}
-#whiteGrid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;  
-    text-align: center;
-    grid-row-gap: 1vh;
-}
-
 .logo2{
+    text-align: center;
     padding-top: 9vh;
     font-family: 'Great Vibes', cursive;
     font-weight: bolder;
     font-size: 14vh;
 }
+
+.flexItem5{
+    display: flex; 
+    justify-content: space-between;
+    padding-left: 15vw; 
+    width: 70%;     
+}
+
+.line-height{
+    list-style-type: none;
+    line-height: 4vh;
+}
+
 .last{
     color: rgb(187, 50, 50);
     font-size: 3vh;
@@ -344,22 +306,200 @@ input::placeholder {
     font-weight: lighter; 
 }
 
-#rowLast{
-    grid-row: 3/6;
-}
 .copy{
     text-decoration: none;
     font-family: 'Black Ops One', cursive;
     font-size: 2vh;
-    padding-bottom: 2vh;
+    padding-top: 3vh;
+    padding-left: 3vw;
 }
 
-#button{
-    background-color: rgb(136, 218, 153);
-    color: rgb(10, 8, 6); 
-    font-size: 3vh; 
-    font-family: 'Vina Sans', cursive;
-    border: none;
-    padding-left: 2vw;
-    padding-right: 2vw;
+
+input,
+input::placeholder {
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+
+@media ( max-width: 1100px ){
+    
+    .flexItem{
+        width: 50%;
+        justify-content: left;
+    }
+    .logo {
+        font-size: 5vh;
+    }
+
+    .cursive2{
+        font-size: 4vh;
+    }
+    
+    .flexItem2{
+        display: block;
+        width: 85%;
+    }
+
+    .boxText{
+        font-size: 2vh;
+    }
+
+    .high{
+        font-size: 5vh;
+        background-color: rgb(165, 45, 45); 
+        color: white;
+    }
+
+    .text-block{
+        width: 60vw;
+        height: 30vh;
+        background-color: white;
+        color: black;
+        text-align: center;
+        margin-top: 4vh;
+        overflow-y: auto;
+    }
+
+    .image5{
+        width: 2.5vw;
+        height: 4vh;
+        border-radius: 2vh;
+        position: relative;
+        top: 0vh;   
+    }
+
+    .left-space{
+        text-align: center;
+    }
+
+    .text-gif {
+        width: 60vw;
+        height: 40vh;
+        background-color: white;
+        color: black;
+        text-align: justify;
+        background-image: url(iloveimg/decor.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .flexItem3{
+        display: block;
+        width: 50%;
+        text-align: center;
+        padding: 3vw;
+        padding-left: 12vw;
+    }
+
+    .image1{
+        width: 70vw;
+        height: 68vh;
+    }
+
+    .image2{
+        width: 70vw;
+        height: 68vh;
+    }
+
+    .box{
+        overflow: auto;
+    }
+    .flexItem4{
+        display: block;
+        text-align: center;
+    }
+    .image3{
+        width: 28vw;
+        height: 28vh;
+    }
+
+    .OP{
+        width: 30%;
+    }
+
+    .bottomBox{
+        overflow: auto;
+    }
+
+    .logo2{
+        text-align: center;
+        padding-top: 9vh;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bolder;
+        font-size: 10vh;
+    }
+
+    .flexItem5{
+        display: block;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 581px){
+
+    .left-space{
+        padding-left: 2vw;
+    }
+    .flexItem{
+        display: block;
+        justify-content: safe;
+    }
+    .flexItem3 {
+        display: block;
+        width: 50%;
+        text-align: center;
+    }
+
+    .image1 {
+        width: 98vw;
+        height: 56vh;
+    }
+
+    .image2 {
+        width: 98vw;
+        height: 56vh;
+    }
+
+    .image3{
+        width: 56vw;
+        height: 28vh;
+    }
+
+    .logo2{
+        text-align: center;
+        padding-top: 9vh;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bolder;
+        font-size: 5vh;
+    }
+
+    .whiteBox{
+        overflow: auto;
+    }
+    .cursive2{
+        font-size: 2vh;
+    }
+
+    .flexItem2{
+        padding: 0vh;
+    }
+
+    .item{
+        width: 20%;
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+
+    .flexItem{
+        display: block;
+        width: 70%;
+    }
+
+    .item{
+        padding-left: 5vw;
+    }
+}
+    
