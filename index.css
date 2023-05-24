@@ -89,18 +89,18 @@ body {
 
 .flexItem3{
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
 }
 
 .cursive2{
     font-family: 'Sigmar', cursive;
-    font-size: 6vh;
+    font-size: 7vh;
     text-align: justify;
     font-weight: bolder;
     color: rgb(243 177 52);
     letter-spacing: 0.2vw;
-    padding-left: 3vw;
+    padding-left: 5vw;
 }
 
 .cursive{
@@ -322,61 +322,313 @@ input::placeholder {
 }
 
 
+@media (max-width: 768px){
 
-@media ( max-width: 1100px ){
-    
-    .flexItem{
-        width: 50%;
-        justify-content: left;
-    }
     .logo {
+        font-size: 11vh;
+    }
+
+    .box {
+        width: 100%;
+        height: 32vh;
+        background-color: black;
+        color: antiquewhite;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 4vh;
+        text-align: justify;
+        overflow-x: auto;
+    }
+
+    .flexItem {
+        width: 99%;
+        justify-content: space-between;
+
+    }
+
+    .flexItem2 {
+        display: flex;
+        width: 85%;
+        text-align: center;
+        padding-left: 2vw;
+    }
+    .image1 {
+        width: 49vw;
+        height: 38vh;
+    }
+
+    .image2 {
+        width: 49vw;
+        height: 38vh;
+    }
+
+    .flexItem3 {
+        display: block;
+        width: 80%;
+        text-align: center;
+        padding-left: 14vw;
+    }
+
+    .cursive2 {
+        font-size: 6vh;
+        padding-left: 4vw;
+    }
+    .cursive{
+        width: 78%
+    }
+
+    .text-block {
+        width: 72vw;
+        height: 33vh;
+    }
+
+    .image5 {
+        width: 9.5vw;
+        height: 8vh;
+        border-radius: 4vh;
+        position: relative;
+        top: 0vh;
+    }
+
+    .boxText {
+        font-size: 4vh;
+    }
+
+    .para {
+        font-family: 'Rancho', cursive;
+        font-size: 2.4vh;
+        text-align: justify;
+        padding: 2vh;
+    }
+
+    .text-gif {
+        width: 72vw;
+        height: 30vh;
+    }
+
+    .image3 {
+        width: 35vw;
+        height: 28vh;
+    }
+
+    .sign1 {
+        width: 75%;
+    }
+
+    .sign {
+        font-family: 'Dancing Script', cursive;
+        font-size: 3.5vh;
+        color: yellow;
+        text-align: left;
+        position: relative;
+        width: 59%;
+    }
+
+    .logo2 {
+        text-align: center;
+        padding-top: 4vh;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bolder;
+        font-size: 14vh;
+    }
+
+    .flexItem5 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8vw;
+        width: 85%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 425px){
+
+    .high {
         font-size: 5vh;
     }
 
-    .cursive2{
-        font-size: 4vh;
-    }
-    
-    .flexItem2{
-        display: block;
-        width: 85%;
+    .image3 {
+        width: 83vw;
+        height: 28vh;
+        padding-left: 17vw;
     }
 
-    .boxText{
+    .logo {
+        font-size: 6vh;
+    }
+    .flexItem2 {
+        display: block;
+        width: 85%;
+        text-align: center;
+        padding-left: 2vw;
+    }
+    .flexItem {
+        width: 99%;
+        justify-content: space-between;
+        padding-top: 1vh;
+    }
+    
+    .item {
+        text-decoration: none;
+        font-size: 1.2vh;
+        font-weight: lighter;
+        color: rgb(143, 201, 245);
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: 1vh;
+    }
+
+    .image1 {
+        width: 94vw;
+        height: 40vh;
+    }
+    .image2 {
+        width: 94vw;
+        height: 40vh;
+    }
+
+    .flexItem3 {
+        display: block;
+        width: 81%;
+        text-align: center;
+    }
+
+    .boxText {
+        font-size: 3vh;
+    }
+
+    .cursive2 {
+        font-size: 5vh;
+        padding-left: 0vw;
+    }
+
+    .cursive {
+        width: 80%;
+    }
+
+    .text-block {
+        width: 75vw;
         font-size: 2vh;
     }
 
-    .high{
-        font-size: 5vh;
-        background-color: rgb(165, 45, 45); 
+    .image5 {
+        width: 15.5vw;
+        height: 7vh;
+        border-radius: 7vh;
+        position: relative;
+        top: 0vh;
+    }
+
+    .para {
+        font-size: 2.1vh;
+    }
+
+    .text-gif {
+        width: 75vw;
+        height: 23vh;
+    }
+
+    .image3 {
+        width: 65vw;
+        height: 28vh;
+    }
+
+    .sign1 {
+        width: 85%;
+        font-size: 3vh;
+    }
+
+    .sign {
+        font-family: 'Dancing Script', cursive;
+        font-size: 3vh;
+        color: yellow;
+        text-align: left;
+        position: relative;
+        width: 88%;
+    }
+
+    .logo2 {
+        text-align: center;
+        padding-top: 3vh;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bolder;
+        font-size: 8vh;
+    }
+    .flexItem5 {
+        display: block;
+        width: 85%;
+        text-align: center;
+    }
+}
+
+
+
+
+@media (max-width: 375px){
+    .logo {
+        font-size: 4vh;
+    }
+
+    .flexItem2 {
+        display: block;
+        width: 85%;
+        text-align: center;
+        padding-left: 2vw;
+    }
+    .image1 {
+        width: 94vw;
+        height: 37vh;
+    }
+
+    .image2 {
+        width: 94vw;
+        height: 37vh;
+    }
+
+    .high {
+        font-size: 4vh;
+        background-color: rgb(165, 45, 45);
         color: white;
     }
 
-    .text-block{
-        width: 60vw;
+    .left-space {
+        padding-left: 0vw;
+    }
+
+    .flexItem3 {
+        display: block;
+        width: 84%;
+        text-align: center;
+    }
+    .cursive2 {
+        font-size: 3vh;
+        padding-left: 0vw;
+        padding-top: 2vh;
+    }
+
+    .text-block {
+        width: 76vw;
         height: 30vh;
         background-color: white;
         color: black;
         text-align: center;
         margin-top: 4vh;
-        overflow-y: auto;
     }
 
-    .image5{
-        width: 2.5vw;
+    .image5 {
+        width: 11.5vw;
         height: 4vh;
         border-radius: 2vh;
         position: relative;
-        top: 0vh;   
+        top: 0vh;
     }
 
-    .left-space{
-        text-align: center;
+    .boxText {
+        font-size: 3vh;
     }
 
     .text-gif {
-        width: 60vw;
-        height: 40vh;
+        width: 76vw;
+        height: 19vh;
         background-color: white;
         color: black;
         text-align: justify;
@@ -385,121 +637,128 @@ input::placeholder {
         background-repeat: no-repeat;
     }
 
-    .flexItem3{
-        display: block;
-        width: 50%;
-        text-align: center;
-        padding: 3vw;
-        padding-left: 12vw;
-    }
-
-    .image1{
-        width: 70vw;
-        height: 68vh;
-    }
-
-    .image2{
-        width: 70vw;
-        height: 68vh;
-    }
-
-    .box{
-        overflow: auto;
-    }
-    .flexItem4{
-        display: block;
-        text-align: center;
-    }
-    .image3{
-        width: 28vw;
+    .image3 {
+        width: 83vw;
         height: 28vh;
+        padding-left: 8vw;
     }
 
-    .OP{
-        width: 30%;
+    .sign1 {
+        width: 99%;
+        font-family: 'Vina Sans', cursive;
+        font-size: 2vh;
+        color: rgb(247, 247, 217);
+        text-align: left;
+        letter-spacing: 0.2vw;
+        font-weight: bold;
     }
 
-    .bottomBox{
-        overflow: auto;
+    .sign {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2vh;
+        color: yellow;
+        text-align: left;
+        position: relative;
+        width: 79%;
     }
 
-    .logo2{
+    .cursive {
+        text-decoration: none;
+        font-family: 'Dancing Script', cursive;
+        font-size: 2vh;
+        font-weight: lighter;
+        animation-name: text;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        text-align: left;
+        letter-spacing: 0.2vw;
+        line-height: 8vh;
+    }
+    
+    .logo2 {
         text-align: center;
-        padding-top: 9vh;
+        padding-top: 3vh;
         font-family: 'Great Vibes', cursive;
         font-weight: bolder;
-        font-size: 10vh;
+        font-size: 6vh;
     }
 
-    .flexItem5{
+    .flexItem {
+        width: 99%;
+        justify-content: space-between;
+        padding-top: 1vh;
+    }
+
+    .item {
+        text-decoration: none;
+        font-size: 1.2vh;
+        font-weight: lighter;
+        color: rgb(143, 201, 245);
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: 1vh;
+    }
+    .flexItem2 {
         display: block;
+        width: 85%;
+        text-align: center;
+        padding-left: 2vw;
+    }
+    .flexItem5 {
+        display: block;
+        width: 85%;
         text-align: center;
     }
 }
+    
 
 
-@media (max-width: 581px){
 
-    .left-space{
+@media (max-width: 320px){
+    
+    .flexItem {
+        width: 99%;
+        justify-content: space-between;
+    }
+
+    .item {
+        text-decoration: none;
+        font-size: 1.2vh;
+        font-weight: lighter;
+        color: rgb(143, 201, 245);
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: 1vh;
+    }
+    .flexItem2 {
+        display: block;
+        width: 85%;
+        text-align: center;
         padding-left: 2vw;
     }
-    .flexItem{
-        display: block;
-        justify-content: safe;
-    }
-    .flexItem3 {
-        display: block;
-        width: 50%;
-        text-align: center;
-    }
-
     .image1 {
-        width: 98vw;
-        height: 56vh;
+        width: 94vw;
+        height: 32vh;
     }
 
     .image2 {
-        width: 98vw;
-        height: 56vh;
+        width: 94vw;
+        height: 32vh;
     }
 
-    .image3{
-        width: 56vw;
-        height: 28vh;
+    .image3 {
+        width: 93vw;
+        height: 27vh;
+        padding: 2vw;
     }
-
-    .logo2{
-        text-align: center;
-        padding-top: 9vh;
-        font-family: 'Great Vibes', cursive;
-        font-weight: bolder;
-        font-size: 5vh;
-    }
-
-    .whiteBox{
-        overflow: auto;
-    }
-    .cursive2{
-        font-size: 2vh;
-    }
-
-    .flexItem2{
-        padding: 0vh;
-    }
-
-    .item{
-        width: 20%;
-        padding-left: 0vw;
-        padding-right: 0vw;
-    }
-
-    .flexItem{
+    .flexItem5 {
         display: block;
-        width: 70%;
+        width: 85%;
+        text-align: center;
     }
 
-    .item{
-        padding-left: 5vw;
+    .para {
+        font-size: 1.9vh;
     }
 }
     
