@@ -324,8 +324,12 @@ input::placeholder {
 
 @media (max-width: 768px){
 
+    .high {
+        font-size: 10vh;
+    }
+
     .logo {
-        font-size: 11vh;
+        font-size: 9vh;
     }
 
     .box {
@@ -371,6 +375,7 @@ input::placeholder {
     .cursive2 {
         font-size: 6vh;
         padding-left: 4vw;
+        padding-top: 2vh;
     }
     .cursive{
         width: 78%
